@@ -148,7 +148,7 @@ app.post('/address/delete', async (req, res) => {
 })
 
 conn
-  .sync()
+  .sync()// persiste os dados
   //.sync({ force: true }) // apaga todos os dados quando roda o sistema
   .then(() => {
   app.listen(3000)
